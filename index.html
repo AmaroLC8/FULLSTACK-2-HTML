@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo quieres, te lo vendo - Materialize</title>
+    
+    <!-- CDN Materialize CSS e Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <h1 style="font-family: Arial; font-size: 10px;" class="p-2">Lo quieres, te lo vendo</h1>
+
+    <!-- Menú de navegación en Materialize (Fondo Azul) -->
+    <nav class="blue">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">Inicio</a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menú desplegable móvil (Sidenav) -->
+    <ul class="sidenav" id="mobile-menu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <!-- Sección Extracto -->
+    <main class="container section">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 center-align">
+                <p style="font-size: 14px; line-height: 1.6; color: #333;">
+                    Somos "Lo quieres, te lo vendo", un emprendimiento joven dedicado a 
+                    facilitar tus compras en línea. Estamos ubicados en Santiago y nos 
+                    especializamos en ofrecer productos seleccionados con entregas rápidas 
+                    y seguras directamente a tu hogar.
+                </p>
+                <!-- Imagen responsiva en Materialize -->
+                <img src="assets/img/logo-ejemplo.jpg" alt="Imagen del negocio" class="responsive-img z-depth-1 mt-3">
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p class="mb-0">Equipo Innovación Digital - 2026</p>
+    </footer>
+
+    <!-- CDN JavaScript de Materialize e Inicialización -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>

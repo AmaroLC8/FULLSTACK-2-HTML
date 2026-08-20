@@ -1,0 +1,25 @@
+/* 1. Estilos del Menú (fondo azul, letras blancas) */
+nav {
+    background-color: blue;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado típico de los links */
+}
+
+/* 2. Estilo para el extracto (debe estar centrado) */
+.extracto {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 3. Pie de página (fondo negro) */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

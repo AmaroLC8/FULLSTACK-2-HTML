@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo quieres, te lo vendo</title>
+    
+    <!-- 1. CDN de Bootstrap: Esto importa los estilos de Bootstrap a tu proyecto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tu archivo CSS personalizado (lo dejamos al final para poder sobrescribir algo si es necesario) -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- Título con el estilo solicitado -->
+    <h1 style="font-family: Arial; font-size: 10px;" class="p-2">Lo quieres, te lo vendo</h1>
+
+    <!-- 2. Menú de Bootstrap (Navbar): Reemplaza al <nav> anterior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <!-- Botón para menú desplegable en celulares -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección del extracto -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p style="font-size: 14px; line-height: 1.6; color: #333;">
+                    Somos "Lo quieres, te lo vendo", un emprendimiento joven dedicado a 
+                    facilitar tus compras en línea. Estamos ubicados en Santiago y nos 
+                    especializamos en ofrecer productos seleccionados con entregas rápidas 
+                    y seguras directamente a tu hogar.
+                </p>
+                <!-- 3. Imagen responsiva: la clase 'img-fluid' hace que se adapte sola a cualquier pantalla -->
+                <img src="assets/img/logo-ejemplo.jpg" alt="Imagen del negocio" class="img-fluid rounded mt-3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Equipo Innovación Digital - 2026</p>
+    </footer>
+
+    <!-- Script de Bootstrap (necesario para que funcionen los menús desplegables en móviles) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
